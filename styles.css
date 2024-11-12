@@ -10,9 +10,12 @@ body {
 header {
     background-color: #003366; /* Dark blue */
     color: white;
-    padding: 20px;
+    padding: 10px;
+    width: 100%;
     text-align: center;
 }
+
+
 
 /* Navigation Bar */
 
@@ -63,7 +66,7 @@ nav ul li a:hover {
 
 
 section {
-    margin: 20px 0;
+    margin: 20px;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
@@ -79,11 +82,20 @@ footer {
     padding: 10px;
     background-color: #003366; /* Dark blue */
     color: white;
-    text-decoration: none;
     position: relative;
     bottom: 0;
     width: 100%;
 }
+
+footer a {
+    color: white; /* Match the footer text color */
+    text-decoration: underline; 
+}
+
+footer a:hover {
+    color: #cccccc; /* Optional: Change color on hover */
+}
+
 
 .linkedin-logo {
     width: 1em; /* Matches the font height */
@@ -100,7 +112,7 @@ footer {
 }
 
 #experience {
-    margin: 20px 0;
+    margin: 20px;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
