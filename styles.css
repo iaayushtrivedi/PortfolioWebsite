@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue */
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #003366; /* Dark blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Bar */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* Header Navigation Links */
+nav ul li a {
+    color: white;              /* Keep the text color white */
+    text-decoration: none;     /* Remove the default underline */
+    padding: 10px 20px;        /* Add padding around the text */
+    display: inline-block;     /* Make the link behave like a button */
+    border-radius: 5px;        /* Optional: Add rounded corners */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for header navigation links */
+nav ul li a:hover {
+    transform: scale(1.1);                     /* Slightly zoom in on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    cursor: pointer;                          /* Change the cursor to pointer */
+    background-color: #005bb5;                 /* Optional: Add a background color change */
+}
+
+/* Responsive Styles for smaller screens */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 10px;                       /* Reduce padding for smaller screens */
+    }
+
+    nav ul {
+        gap: 10px;                           /* Reduce spacing between items on smaller screens */
+    }
+
+    nav ul li a {
+        padding: 8px 15px;                   /* Adjust padding for smaller screens */
+    }
+}
+
+
+
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #003366; /* Dark blue */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.linkedin-logo {
+    width: 1em; /* Matches the font height */
+    height: 1em; /* Keeps the logo square */
+    vertical-align: middle; /* Aligns the icon with the text */
+    margin-right: 0.3em; /* Space between the icon and text */
+}
+
+.graduation-cap {
+    width: 2em; /* Matches the font height */
+    height: 2em; /* Keeps the logo square */
+    vertical-align: middle; /* Aligns the icon with the text */
+    margin-right: 0.3em; /* Space between the icon and text */
+}
+
+#experience {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; /* Added for positioning the line */
+}
+
+.experience-item {
+    margin-bottom: 30px;
+    position: relative; /* Added for positioning the line */
+    padding-left: 20px; /* Added to create space for the vertical line */
+}
+
+.experience-item h3 {
+    margin-top: 0;
+}
+
+.experience-item p {
+    margin: 5px 0;
+}
+
+.experience-item ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+
+
+
+.profile-image {
+    width: 120px;              /* Adjust the width of the image */
+    height: 120px;             /* Make height equal to width for a perfect circle */
+    border-radius: 50%;        /* This makes the image circular */
+    object-fit: cover;         /* Ensures the image covers the circle without distortion */
+    margin-right: 20px;        /* Space between the image and other elements */
+    border: 4px solid #fff;    /* White border around the image */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Hover effect to scale the image and add shadow */
+.profile-image:hover {
+    transform: scale(1.1);              /* Slightly zoom in on hover */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3); /* Increase the shadow on hover */
+    cursor: pointer;                   /* Change the cursor to pointer */
+}
+
+/* Optional: Add a subtle animation for the initial load */
+@keyframes imageLoad {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.profile-image {
+    animation: imageLoad 0.5s ease-out;
+}
+
