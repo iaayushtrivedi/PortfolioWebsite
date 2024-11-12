@@ -79,6 +79,7 @@ footer {
     padding: 10px;
     background-color: #003366; /* Dark blue */
     color: white;
+    text-decoration: none;
     position: relative;
     bottom: 0;
     width: 100%;
